@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DO&MA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <p class="logo">DO&MA</p>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#servicii">SERVICII</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+          <h1>SERVICE AUTO</h1>
+          <p>Vindem, montăm, reparăm</p>
+          <a href="#servicii" class="hero-btn">Vizitează-ne Pentru A Afla Mai Multe</a>
+    </div>
+  </section>
+
+  <section class="servicii" id="servicii">
+    <h1>Serviciile pe care le oferim</h1>
+    <p>Cu o experiență de peste 20 de ani în domeniu, îți oferim o gamă largă de servicii de reparații mecanice, electrice și mentenanță auto. Puteți avea încredere deplină în abilitățile și experiența specialiștilor noștri, în service-ul nostru mașina ta este pe mâini bune. La DO&MA folosim numai piese de calitate, cu o lungă durată de viață care să contribuie la o bună funcționare a mașinii tale.</p>
+
+    <div class="row">
+        <div class="servicii-col">
+            <h3>Reparații mecanice:</h3>
+            <p>Schimb ulei și filtre, înlocuit distribuție motor și adiționale, înlocuit transmisie, rulare direcție, schimb plăcuțe frână etc.</p>
+        </div>
+        <div class="servicii-col">
+            <h3>Reparații electrice:</h3>
+            <p>Reparăm alternatoare, demaroare, cablaje și cam tot ce ține de electricitate &#128513;.</p>
+        </div>
+        <div class="servicii-col">
+            <h3>Alte servicii:</h3>
+            <p>Montăm cârlige de tractare, module electrice, scuturi mecanice, sisteme de încălzire Webasto și Eberspacher. Ne ocupăm de asemenea de climă, aer condiționat, încărcare agent frigorific R134a și multe altele.</p>
+        </div>
+    </div>
+</section>
+
+<section class="reparatii">
+  <h1>Un sneak peek din service-ul nostru &#128663;</h1>
+  <div class="row">
+      <div class="reparatii-col">
+          <img src="images/distributie.jpg">
+          <div class="layer">
+              <h3>DISTRIBUȚIE</h3>
+          </div>
+      </div>
+      <div class="reparatii-col">
+          <img src="images/electrice.jpg">
+          <div class="layer">
+              <h3>ELECTRICE</h3>
+          </div>
+      </div>
+      <div class="reparatii-col">
+          <img src="images/carlig.jpg">
+          <div class="layer">
+              <h3>MONTAJ CÂRLIG</h3>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h1>Contact</h1>
+  <p>
+  Datele de contact sunt:<br>
+  &#9993;<a href="mailto:office@do-ma.ro">office@do-ma.ro</a><br>
+  &#9742;<a href="tel:0744634592">0744634592</a><br>
+  &#9742;<a href="tel:0745598984">0745598984</a><br>
+  &#9742;<a href="tel:0230543080">0230543080</a><br>
+  &#8982; Str. Matei Gr. Cantacuzino nr. 65, Fântâna Mare 727566
+
+  <table>
+      <tr>
+          <th>Zi</th>
+          <th>Program</th>
+      </tr>
+      <tr>
+          <td>Luni-Vineri</td>
+          <td><time datetime="08:00">08:00</time>-<time datetime="18:00">18:00</time></td>
+      </tr>
+      <tr>
+          <td>Sâmbătă</td>
+          <td><time datetime="08:00">08:00</time>-<time datetime="14:00">14:00</time></td>
+      </tr>
+      <tr>
+          <td>Duminică</td>
+          <td>Închis</td>
+      </tr>
+  </table>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6684.19972476557!2d26.30051297977983!3d47.42798325787728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4735175e0706b2e7%3A0x6d15f84d6c74568a!2sCastrol%20SERVICE%20Do%26Ma!5e0!3m2!1sro!2sro!4v1680781987118!5m2!1sro!2sro" width="600" height="450" class="harta" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </p>
+</section>
+
+<section class="footer">
+  <p class="back-button"><a href="#">back to top</a></p>
+  <p>Made by Pintilescu Andra</p>
+</section>
+
+
+<script>
+  var navLinks=document.getElementById("navLinks");
+  function showMenu(){
+      navLinks.style.right="0";
+  }
+  function hideMenu(){
+      navLinks.style.right="-200px";
+  }
+</script>
+</body>
+</html>
